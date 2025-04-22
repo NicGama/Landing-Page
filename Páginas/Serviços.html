@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #D1D8EB;
+        }
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background-color: #fff;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        }
+        th, td {
+            padding: 12px;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #54373B;
+            color: white;
+        }
+        tr{
+            background-color: #f2f2f2;
+        }
+
+        main{
+            background-color: #ffffff;
+            padding: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-style: solid;
+            border-radius: 10%;
+            border-color: #ffffff;
+        }
+
+        @font-face { /* Chamada da fonte, coloquei direto o nome e funcionou, sem precisar de ./../, não tinha funcionado antes*/
+        font-family: 'National Park';
+        src: url('NationalPark-VariableFont_wght.ttf') format('truetype'),
+        /*https://fonts.google.com/selection*/
+    }
+
+    h1{
+        font-family: 'National Park', monospace;
+        /*cor a selecionar inline*/
+        text-align: center; 
+    }
+
+    nav {
+        background-color: rgba(84, 55, 59, 0.75); /*rgb a de alfa, controla a transparencia*/
+        color: #ffffff;
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        position: fixed;
+        font-family: 'National Park', monospace;
+        font-weight: 1000px;
+        z-index: 100;
+        top: 0;
+        left: 0;
+    }
+
+    a{
+        color: #ffffff;
+        text-decoration: none;
+        
+    }
+
+    a:hover{
+        color: #D1D8EB;
+        font-style: italic;
+        text-decoration: underline;
+        text-decoration-color: #D1D8EB #000000;
+    }
+
+    </style>
+</head>
+<body>
+
+    <nav> 
+        <a href="./../INDEX.html"> Home</a> -
+        <a href="https://www.linkedin.com/in/nicolas-gama/overlay/1739394296535/single-media-viewer/?profileId=ACoAAEDaIpABL-XPu9y3Cjt1rQuz1T-MFBtcWcU" target="_blank"> Currículo</a> - 
+        <a href="https://github.com/NicGama" target="_blank"> GitHub</a> - 
+        <a href="./Serviços.html" target="_self">Serviços</a>
+    </nav>
+
+    <main>
+    <h1>Tabela de Preços de Páginas Web</h1>
+
+    
+    <table>
+        <tr>
+            <th>Tipo de Página</th>
+            <th>1 Página</th>
+            <th>5 Páginas</th>
+            <th>10 Páginas</th>
+            <th>20+ Páginas</th>
+        </tr>
+        <tr>
+            <td>Homepage</td>
+            <td>R$ 200</td>
+            <td>R$ 800</td>
+            <td>R$ 1.500</td>
+            <td>R$ 3.000+</td>
+        </tr>
+        <tr>
+            <td>Página Estática</td>
+            <td>R$ 150</td>
+            <td>R$ 600</td>
+            <td>R$ 1.200</td>
+            <td>R$ 2.500+</td>
+        </tr>
+        <tr>
+            <td>Página Dinâmica</td>
+            <td>R$ 500</td>
+            <td>R$ 1.800</td>
+            <td>R$ 3.500</td>
+            <td>R$ 7.000+</td>
+        </tr>
+        <tr>
+            <td>Página Super Avançada</td>
+            <td>R$ 1.500</td>
+            <td>R$ 5.000</td>
+            <td>R$ 10.000</td>
+            <td>R$ 20.000+</td>
+        </tr>
+    </table>
+
+    <p>Clique <a style= "color:#000000 ;" href="./../INDEX.html" target="_self" text-decoration="underline" text-decoration-color="#000000">aqui</a> para voltar à página principal</p>
+
+    </main>
+
+</body>
+</html>
+
+</body>
+</html>

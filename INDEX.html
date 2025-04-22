@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+
+<style>
+    /*Catálogo de cores: 
+    #D1D8EB - Branco
+    #1E4737 - Verde
+    #5A8361 - Verde claro
+    #54373B - Marrom
+    #AF363B - Vermelho*/
+
+    nav {
+        background-color: rgba(84, 55, 59, 0.75); /*rgb a de alfa, controla a transparencia*/
+        color: #ffffff;
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        position: fixed;
+        font-family: 'National Park', monospace;
+        font-weight: 1000px;
+        z-index: 100;
+        top: 0;
+        left: 0;
+    }
+
+    a{
+        color: #ffffff;
+        text-decoration: none;
+        
+    }
+
+    a:hover{
+        color: #D1D8EB;
+        font-style: italic;
+        text-decoration: underline;
+        text-decoration-color: #D1D8EB;
+    }
+
+    p {
+        background-color: #ffffff;
+        color: #000;
+        width: 50%;
+        height: 640px;
+        padding: 10px;
+        border-radius: 5%;
+        font-family: 'National Park', monospace;
+        text-align: justify;
+        
+    }
+
+    h1{
+        font-family: 'National Park', monospace;
+        /*cor a selecionar inline*/
+        text-align: center; 
+    }
+
+    .container { /*Container de texto e imagem, class=".classe q vc mesmo cria, container é o padrão pelo visto, é igual o nome da fonte*/
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #ffffff;
+        /*bg-color: tem q botar inline*/
+        padding: 65px;
+        height: 640px;
+        margin: 0px;
+    }
+
+    img {
+        width: 50%;
+        height: 640px;
+        padding: 10px;
+        border-radius: 5%;
+
+    }
+
+    body {
+        background-color: rgba(209, 216, 235, 1);
+    }
+
+    @font-face { /* Chamada da fonte, coloquei direto o nome e funcionou, sem precisar de ./../, não tinha funcionado antes*/
+        font-family: 'National Park';
+        src: url('./Fonte/NationalPark-VariableFont_wght.ttf') format('truetype'),
+        /*https://fonts.google.com/selection*/
+    }
+    
+
+    
+
+</style>
+
+<body>
+
+    <nav>
+        <a href="./INDEX.html"> Home</a> - 
+        <a href="https://www.linkedin.com/in/nicolas-gama/overlay/1739394296535/single-media-viewer/?profileId=ACoAAEDaIpABL-XPu9y3Cjt1rQuz1T-MFBtcWcU" target="_blank"> Currículo</a> - 
+        <a href="https://github.com/NicGama" target="_blank"> GitHub</a> - 
+        <a href="./Páginas/Serviços.html" target="_self">Serviços</a>
+    </nav>
+
+    <br>
+    <br>
+    <br>
+    <div style="padding: 65px; height: 640px; margin: 0px; background-color: rgba(209, 216, 235, 1); padding: 0px;">
+        <img style="width: 100%; height: 400px; padding: 0px;border-radius: 0px; padding: 0px;" 
+        src="./Imagens/ChatGPT Image 21 de abr. de 2025, 22_28_36.png" alt="Banner SI - UVV">
+        <div style="padding: 150px;">
+        <h1>Olá, te convido a conhecer um pouco do meu trabalho e da minha história</h1>
+        <p  style ="width: 100%; padding: 0px; height: 100%; background-color: #D1D8EB; text-align: center; display: flex; justify-content: center; border-radius: 0px">Na parte superior da sua tela há uma barra que te redirecionará para sua área de interesse do meu projeto, recomendo visitá-las para complementar sua experiência no site </p>
+        </div>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <div class="container" style="background-color: #AF363B">
+        <p style="display: grid;height: auto; padding: 20px;">Oi! Me chamo Nícolas Gama e estou me graduando em Sistemas de Informação pela Universidade de Vila Velha (UVV), moro no Espírito Santo (Vila Velha) desde que nasci. Tenho 18 anos, acabei de ingressar no Ensino Superior, mas já trabalhei como menor aprendiz pela organização CIEE como assistente administrativo. Até o momento, moro com meus pais e namoro uma futura dentista (que também está se graduando na UVV). Eles dão sentido à minha vida, aproveitando-a comigo. Também tenho uma cadela de animal de estimação que alegra a minha rotina, mas fora dela gosto de ir à praia, jogar (videogames, tabuleiro, esportes no geral), ler para entretenimento e ouvir música. Um exemplo de música que eu ouço: </p>
+        <audio preload="auto" controls loop>
+            <source src="./Áudio/aquelas coisas, pumapji e sonoTWS(instrumental).mp3" type="audio/mpeg">
+            <p>Se seu navegador não suporta áudio, clique <a href="./../Imagens/aquelas coisas, pumapji e sonoTWS(instrumental).mp3" download="Instrumental aquelas coisas.mp3" >aqui</a> para baixar o áudio."</p>
+            <!-- Essa msg só aparece se não suporta-->
+        </audio>
+        <img src="./Imagens/Nic no tomatto.jpg" alt="Foto do Nícolas">
+
+    </div>
+
+    <br>
+
+    <div class="container" style="background-color: #5A8361;">
+
+        <img src="./Imagens/1303 (3).jpg" alt="Foto estudando Lógica para Computação">
+        <p style="display: flex;height: auto; padding: 70px; border-radius: 30%;">Nasci em Serra (ES) e vim para Vila Velha porque meus pais moravam aqui. Sempre os tive presente ao longo da minha vida, aprendi a ser uma pessoa calma e respeitosa, mas até hoje tenho que me aperfeiçoar aprendendo coisas novas, como cozinhar, consertar um carro, novas mecânicas ou até como ser um namorado melhor. Sempre gostei de aprender, entender as pessoas e tento sempre ser um exemplo para os outros, como meus pais e irmãos foram para mim. Herdei deles gostos como jogos, carros, esportes, música e viagens. Por isso sei tocar bateria, tenho videogames, estou aprendendo a cozinhar, quero um Azera 2009 e tenho facilidade em uma grande gama de coisas as quais me proponho a experimentar. </p>
+
+    </div>
+
+    <br>
+
+    <div class="container" style="background-color: #1E4737">
+        
+        <p style="border: solid #1E4737 20px; border-radius: 10%; display: flex; padding: 20px; align-items: center; font-size:x-large;">Do meu Ensino Básico ao Médio, só estudei em duas escolas, ambas particulares. Do Jardim de Infância até o quinto ano estudei no Centro Educacional Conexão, sempre morei ao lado da escola e lá conheci meu melhor amigo, Yago, com 7 anos. No sexto ano fui para o UP Centro Educacional, e fiquei até o primeiro ano do Ensino Médio, quando tive que voltar para o Conexão quando comecei a trabalhar, já que era perto da minha casa, e fiquei lá até acabar o Ensino Médio. No UP e no Conexão, participei de feiras e eventos nos quais ganhei medalhas e certificados, como Canguru de matemática e pódio interno em simulados gerais e redação modelo ENEM. Também foi onde conheci minha namorada, Talita, no primeiro ano, e a namorada do Yago e minha melhor amiga, Júlia, no sétimo ano. 
+
+            Ao acabar a escola, fui direto para a Universidade sem dúvidas de qual área eu iria me graduar, a área de tecnologia sempre me encantou, além de ter referências na área em minha família, meus tios, que sempre me falaram sobre o trabalho deles. Hoje, no 1° período de SI, estou estudando Lógica para computação, UX Design, Fundamentos da Computação, Construção de Software para Web e Banco de Dados. Estou gostando muito da experiência universitária e das matérias de modo geral, não tenho uma preferida pois estou gostando de todas. </p>
+        <p style="border: solid #1E4737 20px; border-radius: 10%; display: flex; padding: 20px; align-items: center; font-size:x-large;">Comecei a trabalhar com 16 anos como menor aprendiz pelo CIEE, como disse anteriormente. O processo durou 1 ano e 4 meses, sendo parte teórica (no instituto), prática (na empresa contratante) e as duas juntas. Trabalhei no setor administrativo da empresa BrasilCenter Comunicações, antiga Embratel, na parte de Saúde e RH. Mesmo destinado a esses setores, também trabalhei com a área de TI e Almoxarifado. Mais informações acerca disso no meu currículo, disponível na aba de navegação, parte superior da tela. 
+
+            Em TI, há várias possibilidades de emprego, como administrador de banco de dados, desenvolvedor, analista, QA, UX... No momento não tenho certeza em que área pretendo me especializar, mas tenho vontade de exercer um pouco de cada área por meio de estágios, trabalhos, voluntariados, entre outros, para descobrir para qual área seguir. Tenho vontade de planejar um sistema operacional, desenvolver um site complexo e criar um jogo. No final, quero saber um pouco de cada coisa, estou aberto para experimentar pra ver qual eu gosto mais. </p>
+
+    </div>
+
+    <br>
+
+    <div class="container" style="background-color: rgb(65, 42, 45); display:grid">
+
+        <iframe width="1120" height="630" src="https://www.youtube.com/embed/crO7_w4a_fc" title="Mas afinal… O que é o CIEE?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <p style ="width: auto; height: auto; background-color: rgb(65, 42, 45); border: none; color: #ffffff; text-align: center;">
+            Tirando dúvidas sobre o CIEE
+        </p>
+    </div>
+    <br>
+
+</body>
+</html>
